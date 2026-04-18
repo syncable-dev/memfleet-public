@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="MemFleet" width="100" height="100" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg" />
+    <img src="assets/logo-dark.svg" alt="MemFleet" width="100" height="100" />
+  </picture>
 </p>
 
 <h1 align="center">MemFleet</h1>
