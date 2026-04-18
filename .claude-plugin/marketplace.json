@@ -1,0 +1,35 @@
+{
+  "name": "memfleet",
+  "owner": {
+    "name": "Syncable",
+    "email": "support@syncable.dev"
+  },
+  "metadata": {
+    "description": "MemFleet skills for AI coding agents — structural intent coordination, typed episode recording, conflict classification, and multi-agent workflows for fleet-safe edits.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "memfleet-skills",
+      "source": "./plugins/memfleet-skills",
+      "description": "MemFleet skills for fleet coordination — typed structural intent, episode recording, conflict classification (A/B/C), node state rollups, subscriptions, and multi-agent workflows for safe edits, conflict resolution, and fleet coordination.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Syncable",
+        "email": "support@syncable.dev"
+      },
+      "homepage": "https://memfleet.io",
+      "repository": "https://github.com/syncable-dev/memfleet-public",
+      "license": "SEE LICENSE IN LICENSE",
+      "keywords": [
+        "memfleet",
+        "fleet-coordination",
+        "agent-coordination",
+        "mcp",
+        "typed-intent",
+        "crdt",
+        "multi-agent"
+      ]
+    }
+  ]
+}
