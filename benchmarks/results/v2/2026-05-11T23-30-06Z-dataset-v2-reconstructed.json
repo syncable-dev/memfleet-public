@@ -1,0 +1,5167 @@
+{
+  "timestamp": "2026-05-11T23-30-06Z",
+  "model": "claude-haiku-4-5-20251001",
+  "numZones": 30,
+  "latency": {
+    "avgMs": 1,
+    "minMs": 0,
+    "maxMs": 1,
+    "samples": 8
+  },
+  "baseline": [
+    {
+      "task": {
+        "id": "T0004",
+        "agent_id": "agent-z01-4",
+        "intent": {
+          "refactor": {
+            "pattern": "move_symbol"
+          }
+        },
+        "touched_nodes": [
+          "reopenTask",
+          "archiveTask",
+          "auditBuffer"
+        ],
+        "files_touched": [
+          "services/task-service/src/taskController.ts"
+        ],
+        "overlap_zone": 1,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Refactor reopenTask, archiveTask (+1 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:1",
+          "intent:refactor",
+          "pattern:move_symbol"
+        ]
+      },
+      "agentId": "agent-z01-4",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCK9T...",
+      "intentMismatch": false,
+      "durationMs": 21500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 313485,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0005",
+        "agent_id": "agent-z01-5",
+        "intent": {
+          "refactor": {
+            "pattern": "change_signature"
+          }
+        },
+        "touched_nodes": [
+          "reopenTask",
+          "archiveTask",
+          "auditBuffer"
+        ],
+        "files_touched": [
+          "services/task-service/src/taskController.ts"
+        ],
+        "overlap_zone": 1,
+        "expected_conflict_class": "C",
+        "service": "task-service",
+        "description": "Refactor reopenTask, archiveTask (+1 more) in task-service",
+        "tags": [
+          "class:C",
+          "zone:1",
+          "intent:refactor",
+          "pattern:change_signature"
+        ]
+      },
+      "agentId": "agent-z01-5",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCKAK...",
+      "intentMismatch": false,
+      "durationMs": 28200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293354,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0006",
+        "agent_id": "agent-z02-1",
+        "intent": {
+          "refactor": {
+            "pattern": "extract_interface"
+          }
+        },
+        "touched_nodes": [
+          "deleteBlob",
+          "getUser",
+          "updateTask",
+          "rollback"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 2,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Refactor deleteBlob, getUser (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:2",
+          "intent:refactor",
+          "pattern:extract_interface"
+        ]
+      },
+      "agentId": "agent-z02-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKBE...",
+      "intentMismatch": false,
+      "durationMs": 28000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292427,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0008",
+        "agent_id": "agent-z02-3",
+        "intent": {
+          "refactor": {
+            "pattern": "push_down_method"
+          }
+        },
+        "touched_nodes": [
+          "deleteBlob",
+          "getUser",
+          "updateTask",
+          "rollback"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 2,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Refactor deleteBlob, getUser (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:2",
+          "intent:refactor",
+          "pattern:push_down_method"
+        ]
+      },
+      "agentId": "agent-z02-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKCB...",
+      "intentMismatch": false,
+      "durationMs": 27800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293642,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0012",
+        "agent_id": "agent-z03-4",
+        "intent": {
+          "feature_add": {
+            "surface": "new_variant"
+          }
+        },
+        "touched_nodes": [
+          "bulkInsert",
+          "assignTask",
+          "bodyParser",
+          "streamBlob"
+        ],
+        "files_touched": [
+          "services/user-service/src/userRepository.ts"
+        ],
+        "overlap_zone": 3,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Add feature to bulkInsert, assignTask (+2 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:3",
+          "intent:feature_add",
+          "surface:new_variant"
+        ]
+      },
+      "agentId": "agent-z03-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKD3...",
+      "intentMismatch": false,
+      "durationMs": 24700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 313274,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0011",
+        "agent_id": "agent-z03-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_field"
+          }
+        },
+        "touched_nodes": [
+          "bulkInsert",
+          "assignTask",
+          "bodyParser",
+          "streamBlob"
+        ],
+        "files_touched": [
+          "services/user-service/src/userRepository.ts"
+        ],
+        "overlap_zone": 3,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Add feature to bulkInsert, assignTask (+2 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:3",
+          "intent:feature_add",
+          "surface:new_field"
+        ]
+      },
+      "agentId": "agent-z03-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKDZ...",
+      "intentMismatch": false,
+      "durationMs": 28100,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292213,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0013",
+        "agent_id": "agent-z04-1",
+        "intent": {
+          "feature_add": {
+            "surface": "new_module"
+          }
+        },
+        "touched_nodes": [
+          "extractBearerToken",
+          "isTokenExpired",
+          "getActivityFeed"
+        ],
+        "files_touched": [
+          "shared/utils/auth.ts"
+        ],
+        "overlap_zone": 4,
+        "expected_conflict_class": "A",
+        "service": "shared",
+        "description": "Add feature to extractBearerToken, isTokenExpired (+1 more) in shared",
+        "tags": [
+          "class:A",
+          "zone:4",
+          "intent:feature_add",
+          "surface:new_module"
+        ]
+      },
+      "agentId": "agent-z04-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKEP...",
+      "intentMismatch": false,
+      "durationMs": 25000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292806,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0015",
+        "agent_id": "agent-z04-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_migration"
+          }
+        },
+        "touched_nodes": [
+          "extractBearerToken",
+          "isTokenExpired",
+          "getActivityFeed"
+        ],
+        "files_touched": [
+          "shared/utils/auth.ts"
+        ],
+        "overlap_zone": 4,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Add feature to extractBearerToken, isTokenExpired (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:4",
+          "intent:feature_add",
+          "surface:new_migration"
+        ]
+      },
+      "agentId": "agent-z04-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKFG...",
+      "intentMismatch": false,
+      "durationMs": 24600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 314610,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0018",
+        "agent_id": "agent-z05-3",
+        "intent": {
+          "bug_fix": {
+            "defect": "race_condition"
+          }
+        },
+        "touched_nodes": [
+          "DomainEvent",
+          "taskStore.findByAssignee",
+          "findByEmail",
+          "queueEmail"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 5,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Fix bug in DomainEvent, taskStore.findByAssignee (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:5",
+          "intent:bug_fix",
+          "defect:race_condition"
+        ]
+      },
+      "agentId": "agent-z05-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKG7...",
+      "intentMismatch": false,
+      "durationMs": 25100,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 312029,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0019",
+        "agent_id": "agent-z05-4",
+        "intent": {
+          "bug_fix": {
+            "defect": "logic_error"
+          }
+        },
+        "touched_nodes": [
+          "DomainEvent",
+          "taskStore.findByAssignee",
+          "findByEmail",
+          "queueEmail"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 5,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Fix bug in DomainEvent, taskStore.findByAssignee (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:5",
+          "intent:bug_fix",
+          "defect:logic_error"
+        ]
+      },
+      "agentId": "agent-z05-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKH6...",
+      "intentMismatch": false,
+      "durationMs": 30200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 315799,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0021",
+        "agent_id": "agent-z06-2",
+        "intent": {
+          "bug_fix": {
+            "defect": "resource_leak"
+          }
+        },
+        "touched_nodes": [
+          "retrieveFile",
+          "validateQuery",
+          "gracefulShutdown"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 6,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Fix bug in retrieveFile, validateQuery (+1 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:6",
+          "intent:bug_fix",
+          "defect:resource_leak"
+        ]
+      },
+      "agentId": "agent-z06-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKHV...",
+      "intentMismatch": false,
+      "durationMs": 21500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 312770,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0020",
+        "agent_id": "agent-z06-1",
+        "intent": {
+          "bug_fix": {
+            "defect": "type_error"
+          }
+        },
+        "touched_nodes": [
+          "retrieveFile",
+          "validateQuery",
+          "gracefulShutdown"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 6,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Fix bug in retrieveFile, validateQuery (+1 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:6",
+          "intent:bug_fix",
+          "defect:type_error"
+        ]
+      },
+      "agentId": "agent-z06-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKJP...",
+      "intentMismatch": false,
+      "durationMs": 29500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 314587,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0024",
+        "agent_id": "agent-z07-2",
+        "intent": {
+          "cleanup": {
+            "kind": "dead_code"
+          }
+        },
+        "touched_nodes": [
+          "TaskCreatedEvent",
+          "scheduleReport",
+          "corsConfig",
+          "getFileMetadata",
+          "injectUser"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 7,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Clean up TaskCreatedEvent, scheduleReport (+3 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:7",
+          "intent:cleanup",
+          "kind:dead_code"
+        ]
+      },
+      "agentId": "agent-z07-2",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCKKE...",
+      "intentMismatch": false,
+      "durationMs": 24500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 291757,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0025",
+        "agent_id": "agent-z07-3",
+        "intent": {
+          "cleanup": {
+            "kind": "unused_import"
+          }
+        },
+        "touched_nodes": [
+          "TaskCreatedEvent",
+          "scheduleReport",
+          "corsConfig",
+          "getFileMetadata",
+          "injectUser"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 7,
+        "expected_conflict_class": "C",
+        "service": "shared",
+        "description": "Clean up TaskCreatedEvent, scheduleReport (+3 more) in shared",
+        "tags": [
+          "class:C",
+          "zone:7",
+          "intent:cleanup",
+          "kind:unused_import"
+        ]
+      },
+      "agentId": "agent-z07-3",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCKM7...",
+      "intentMismatch": false,
+      "durationMs": 29300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 189127,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0029",
+        "agent_id": "agent-z08-4",
+        "intent": {
+          "performance": {
+            "axis": "latency"
+          }
+        },
+        "touched_nodes": [
+          "getMetricSummary",
+          "decodeToken",
+          "updateBio"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/metricsCollector.ts"
+        ],
+        "overlap_zone": 8,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Optimize getMetricSummary, decodeToken (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:8",
+          "intent:performance",
+          "axis:latency"
+        ]
+      },
+      "agentId": "agent-z08-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKN3...",
+      "intentMismatch": false,
+      "durationMs": 24400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292102,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0028",
+        "agent_id": "agent-z08-3",
+        "intent": {
+          "cleanup": {
+            "kind": "rename_for_clarity"
+          }
+        },
+        "touched_nodes": [
+          "getMetricSummary",
+          "decodeToken",
+          "updateBio"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/metricsCollector.ts"
+        ],
+        "overlap_zone": 8,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Clean up getMetricSummary, decodeToken (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:8",
+          "intent:cleanup",
+          "kind:rename_for_clarity"
+        ]
+      },
+      "agentId": "agent-z08-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKNS...",
+      "intentMismatch": false,
+      "durationMs": 24700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 188792,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0031",
+        "agent_id": "agent-z09-2",
+        "intent": {
+          "performance": {
+            "axis": "throughput"
+          }
+        },
+        "touched_nodes": [
+          "HealthStatus",
+          "bulkIndex",
+          "BlobUploadedEvent",
+          "PRIORITY_MULTIPLIERS",
+          "WorkflowStartedEvent"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 9,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Optimize HealthStatus, bulkIndex (+3 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:9",
+          "intent:performance",
+          "axis:throughput"
+        ]
+      },
+      "agentId": "agent-z09-2",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 22300,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0033",
+        "agent_id": "agent-z09-4",
+        "intent": {
+          "security_fix": {
+            "severity": "critical",
+            "cve": "CVE-2024-0001"
+          }
+        },
+        "touched_nodes": [
+          "HealthStatus",
+          "bulkIndex",
+          "BlobUploadedEvent",
+          "PRIORITY_MULTIPLIERS",
+          "WorkflowStartedEvent"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 9,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Patch security issue in HealthStatus, bulkIndex (+3 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:9",
+          "intent:security_fix",
+          "severity:critical",
+          "cve:CVE-2024-0001"
+        ]
+      },
+      "agentId": "agent-z09-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKQH...",
+      "intentMismatch": false,
+      "durationMs": 34800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 295436,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0036",
+        "agent_id": "agent-z10-3",
+        "intent": {
+          "security_fix": {
+            "severity": "low",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "formatAuditEntry",
+          "createIndex",
+          "stopCollector"
+        ],
+        "files_touched": [
+          "shared/utils/audit.ts"
+        ],
+        "overlap_zone": 10,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Patch security issue in formatAuditEntry, createIndex (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:10",
+          "intent:security_fix",
+          "severity:low"
+        ]
+      },
+      "agentId": "agent-z10-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKRD...",
+      "intentMismatch": false,
+      "durationMs": 27200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 267995,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0037",
+        "agent_id": "agent-z10-4",
+        "intent": {
+          "test_add": {
+            "covers": [
+              "formatAuditEntry",
+              "createIndex",
+              "stopCollector"
+            ]
+          }
+        },
+        "touched_nodes": [
+          "formatAuditEntry",
+          "createIndex",
+          "stopCollector"
+        ],
+        "files_touched": [
+          "shared/utils/audit.ts"
+        ],
+        "overlap_zone": 10,
+        "expected_conflict_class": "A",
+        "service": "shared",
+        "description": "Add tests covering formatAuditEntry, createIndex (+1 more) in shared",
+        "tags": [
+          "class:A",
+          "zone:10",
+          "intent:test_add"
+        ]
+      },
+      "agentId": "agent-z10-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKSA...",
+      "intentMismatch": false,
+      "durationMs": 32600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293387,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0038",
+        "agent_id": "agent-z11-1",
+        "intent": "docs_only",
+        "touched_nodes": [
+          "subscribeToChannel",
+          "applyPagination",
+          "downloadReport",
+          "startFlushLoop"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 11,
+        "expected_conflict_class": "A",
+        "service": "notification-service",
+        "description": "Document subscribeToChannel, applyPagination (+2 more) in notification-service",
+        "tags": [
+          "class:A",
+          "zone:11",
+          "intent:docs_only"
+        ]
+      },
+      "agentId": "agent-z11-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKT6...",
+      "intentMismatch": false,
+      "durationMs": 24600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250942,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0040",
+        "agent_id": "agent-z11-3",
+        "intent": {
+          "refactor": {
+            "pattern": "rename_symbol"
+          }
+        },
+        "touched_nodes": [
+          "subscribeToChannel",
+          "applyPagination",
+          "downloadReport",
+          "startFlushLoop"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 11,
+        "expected_conflict_class": "B",
+        "service": "notification-service",
+        "description": "Refactor subscribeToChannel, applyPagination (+2 more) in notification-service",
+        "tags": [
+          "class:B",
+          "zone:11",
+          "intent:refactor",
+          "pattern:rename_symbol"
+        ]
+      },
+      "agentId": "agent-z11-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKV0...",
+      "intentMismatch": false,
+      "durationMs": 28300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293680,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0042",
+        "agent_id": "agent-z12-2",
+        "intent": {
+          "refactor": {
+            "pattern": "inline_function"
+          }
+        },
+        "touched_nodes": [
+          "blacklistToken",
+          "recordEvent",
+          "markRead",
+          "sessionMiddleware",
+          "retryStep"
+        ],
+        "files_touched": [
+          "services/auth-service/src/authService.ts"
+        ],
+        "overlap_zone": 12,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Refactor blacklistToken, recordEvent (+3 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:12",
+          "intent:refactor",
+          "pattern:inline_function"
+        ]
+      },
+      "agentId": "agent-z12-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKVT...",
+      "intentMismatch": false,
+      "durationMs": 26200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292959,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0041",
+        "agent_id": "agent-z12-1",
+        "intent": {
+          "refactor": {
+            "pattern": "extract_function"
+          }
+        },
+        "touched_nodes": [
+          "blacklistToken",
+          "recordEvent",
+          "markRead",
+          "sessionMiddleware",
+          "retryStep"
+        ],
+        "files_touched": [
+          "services/auth-service/src/authService.ts"
+        ],
+        "overlap_zone": 12,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Refactor blacklistToken, recordEvent (+3 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:12",
+          "intent:refactor",
+          "pattern:extract_function"
+        ]
+      },
+      "agentId": "agent-z12-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKWJ...",
+      "intentMismatch": false,
+      "durationMs": 24400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 314998,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0046",
+        "agent_id": "agent-z13-3",
+        "intent": {
+          "refactor": {
+            "pattern": "pull_up_field"
+          }
+        },
+        "touched_nodes": [
+          "resumeWorkflow",
+          "getReportStatus",
+          "listUsers",
+          "renderTemplate"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 13,
+        "expected_conflict_class": "C",
+        "service": "workflow-service",
+        "description": "Refactor resumeWorkflow, getReportStatus (+2 more) in workflow-service",
+        "tags": [
+          "class:C",
+          "zone:13",
+          "intent:refactor",
+          "pattern:pull_up_field"
+        ]
+      },
+      "agentId": "agent-z13-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKXD...",
+      "intentMismatch": false,
+      "durationMs": 26900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 313315,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0044",
+        "agent_id": "agent-z13-1",
+        "intent": {
+          "refactor": {
+            "pattern": "change_signature"
+          }
+        },
+        "touched_nodes": [
+          "resumeWorkflow",
+          "getReportStatus",
+          "listUsers",
+          "renderTemplate"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 13,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Refactor resumeWorkflow, getReportStatus (+2 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:13",
+          "intent:refactor",
+          "pattern:change_signature"
+        ]
+      },
+      "agentId": "agent-z13-1",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCKYB...",
+      "intentMismatch": false,
+      "durationMs": 31100,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 314707,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0049",
+        "agent_id": "agent-z14-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_symbol"
+          }
+        },
+        "touched_nodes": [
+          "applySort",
+          "scheduleTimeout",
+          "taskStore.paginate",
+          "revokeRole",
+          "setBlobMetadata"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 14,
+        "expected_conflict_class": "A",
+        "service": "search-service",
+        "description": "Add feature to applySort, scheduleTimeout (+3 more) in search-service",
+        "tags": [
+          "class:A",
+          "zone:14",
+          "intent:feature_add",
+          "surface:new_symbol"
+        ]
+      },
+      "agentId": "agent-z14-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCKZ5...",
+      "intentMismatch": false,
+      "durationMs": 24700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292866,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0050",
+        "agent_id": "agent-z14-4",
+        "intent": {
+          "feature_add": {
+            "surface": "new_field"
+          }
+        },
+        "touched_nodes": [
+          "applySort",
+          "scheduleTimeout",
+          "taskStore.paginate",
+          "revokeRole",
+          "setBlobMetadata"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 14,
+        "expected_conflict_class": "B",
+        "service": "search-service",
+        "description": "Add feature to applySort, scheduleTimeout (+3 more) in search-service",
+        "tags": [
+          "class:B",
+          "zone:14",
+          "intent:feature_add",
+          "surface:new_field"
+        ]
+      },
+      "agentId": "agent-z14-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM04...",
+      "intentMismatch": false,
+      "durationMs": 35300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 294804,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0053",
+        "agent_id": "agent-z15-2",
+        "intent": {
+          "feature_add": {
+            "surface": "new_endpoint"
+          }
+        },
+        "touched_nodes": [
+          "assignStep",
+          "getPreferences",
+          "rateLimiter",
+          "retryFailedEmails",
+          "tasksRouter"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 15,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Add feature to assignStep, getPreferences (+3 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:15",
+          "intent:feature_add",
+          "surface:new_endpoint"
+        ]
+      },
+      "agentId": "agent-z15-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM0Z...",
+      "intentMismatch": false,
+      "durationMs": 25700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292610,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0054",
+        "agent_id": "agent-z15-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_migration"
+          }
+        },
+        "touched_nodes": [
+          "assignStep",
+          "getPreferences",
+          "rateLimiter",
+          "retryFailedEmails",
+          "tasksRouter"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 15,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Add feature to assignStep, getPreferences (+3 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:15",
+          "intent:feature_add",
+          "surface:new_migration"
+        ]
+      },
+      "agentId": "agent-z15-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM1S...",
+      "intentMismatch": false,
+      "durationMs": 26700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293882,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0056",
+        "agent_id": "agent-z16-2",
+        "intent": {
+          "bug_fix": {
+            "defect": "off_by_one"
+          }
+        },
+        "touched_nodes": [
+          "requireAuth",
+          "ApiResponse",
+          "requirePermission"
+        ],
+        "files_touched": [
+          "services/auth-service/src/middleware.ts"
+        ],
+        "overlap_zone": 16,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Fix bug in requireAuth, ApiResponse (+1 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:16",
+          "intent:bug_fix",
+          "defect:off_by_one"
+        ]
+      },
+      "agentId": "agent-z16-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM2K...",
+      "intentMismatch": false,
+      "durationMs": 28500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292520,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0055",
+        "agent_id": "agent-z16-1",
+        "intent": {
+          "bug_fix": {
+            "defect": "null_handling"
+          }
+        },
+        "touched_nodes": [
+          "requireAuth",
+          "ApiResponse",
+          "requirePermission"
+        ],
+        "files_touched": [
+          "services/auth-service/src/middleware.ts"
+        ],
+        "overlap_zone": 16,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Fix bug in requireAuth, ApiResponse (+1 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:16",
+          "intent:bug_fix",
+          "defect:null_handling"
+        ]
+      },
+      "agentId": "agent-z16-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM3F...",
+      "intentMismatch": false,
+      "durationMs": 27900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293270,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0060",
+        "agent_id": "agent-z17-2",
+        "intent": {
+          "bug_fix": {
+            "defect": "resource_leak"
+          }
+        },
+        "touched_nodes": [
+          "createUser",
+          "requestLogger",
+          "Permission"
+        ],
+        "files_touched": [
+          "services/user-service/src/userController.ts"
+        ],
+        "overlap_zone": 17,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Fix bug in createUser, requestLogger (+1 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:17",
+          "intent:bug_fix",
+          "defect:resource_leak"
+        ]
+      },
+      "agentId": "agent-z17-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM48...",
+      "intentMismatch": false,
+      "durationMs": 25200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292087,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0061",
+        "agent_id": "agent-z17-3",
+        "intent": {
+          "bug_fix": {
+            "defect": "regression"
+          }
+        },
+        "touched_nodes": [
+          "createUser",
+          "requestLogger",
+          "Permission"
+        ],
+        "files_touched": [
+          "services/user-service/src/userController.ts"
+        ],
+        "overlap_zone": 17,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Fix bug in createUser, requestLogger (+1 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:17",
+          "intent:bug_fix",
+          "defect:regression"
+        ]
+      },
+      "agentId": "agent-z17-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM50...",
+      "intentMismatch": false,
+      "durationMs": 25700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292987,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0064",
+        "agent_id": "agent-z18-2",
+        "intent": {
+          "cleanup": {
+            "kind": "unused_import"
+          }
+        },
+        "touched_nodes": [
+          "getUnreadCount",
+          "refreshAccessToken",
+          "executeAction"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 18,
+        "expected_conflict_class": "C",
+        "service": "notification-service",
+        "description": "Clean up getUnreadCount, refreshAccessToken (+1 more) in notification-service",
+        "tags": [
+          "class:C",
+          "zone:18",
+          "intent:cleanup",
+          "kind:unused_import"
+        ]
+      },
+      "agentId": "agent-z18-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM5R...",
+      "intentMismatch": false,
+      "durationMs": 23900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 188079,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0066",
+        "agent_id": "agent-z18-4",
+        "intent": {
+          "cleanup": {
+            "kind": "comment_only"
+          }
+        },
+        "touched_nodes": [
+          "getUnreadCount",
+          "refreshAccessToken",
+          "executeAction"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 18,
+        "expected_conflict_class": "C",
+        "service": "notification-service",
+        "description": "Clean up getUnreadCount, refreshAccessToken (+1 more) in notification-service",
+        "tags": [
+          "class:C",
+          "zone:18",
+          "intent:cleanup",
+          "kind:comment_only"
+        ]
+      },
+      "agentId": "agent-z18-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM6M...",
+      "intentMismatch": false,
+      "durationMs": 27500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 272740,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0067",
+        "agent_id": "agent-z19-1",
+        "intent": {
+          "cleanup": {
+            "kind": "rename_for_clarity"
+          }
+        },
+        "touched_nodes": [
+          "AuditEntry",
+          "UserRegisteredEvent",
+          "listWithPagination"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 19,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Clean up AuditEntry, UserRegisteredEvent (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:19",
+          "intent:cleanup",
+          "kind:rename_for_clarity"
+        ]
+      },
+      "agentId": "agent-z19-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM7E...",
+      "intentMismatch": false,
+      "durationMs": 28000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 291210,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0069",
+        "agent_id": "agent-z19-3",
+        "intent": {
+          "performance": {
+            "axis": "memory"
+          }
+        },
+        "touched_nodes": [
+          "AuditEntry",
+          "UserRegisteredEvent",
+          "listWithPagination"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 19,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Optimize AuditEntry, UserRegisteredEvent (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:19",
+          "intent:performance",
+          "axis:memory"
+        ]
+      },
+      "agentId": "agent-z19-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM8B...",
+      "intentMismatch": false,
+      "durationMs": 29300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292540,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0073",
+        "agent_id": "agent-z20-4",
+        "intent": {
+          "security_fix": {
+            "severity": "high",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "getCacheStats",
+          "recordMetric",
+          "invalidateByPrefix",
+          "generateOTP"
+        ],
+        "files_touched": [
+          "shared/utils/cache.ts"
+        ],
+        "overlap_zone": 20,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Patch security issue in getCacheStats, recordMetric (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:20",
+          "intent:security_fix",
+          "severity:high"
+        ]
+      },
+      "agentId": "agent-z20-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM95...",
+      "intentMismatch": false,
+      "durationMs": 21900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 247197,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0070",
+        "agent_id": "agent-z20-1",
+        "intent": {
+          "performance": {
+            "axis": "throughput"
+          }
+        },
+        "touched_nodes": [
+          "getCacheStats",
+          "recordMetric",
+          "invalidateByPrefix",
+          "generateOTP"
+        ],
+        "files_touched": [
+          "shared/utils/cache.ts"
+        ],
+        "overlap_zone": 20,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Optimize getCacheStats, recordMetric (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:20",
+          "intent:performance",
+          "axis:throughput"
+        ]
+      },
+      "agentId": "agent-z20-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCM9Y...",
+      "intentMismatch": false,
+      "durationMs": 25300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248822,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0077",
+        "agent_id": "agent-z21-4",
+        "intent": "docs_only",
+        "touched_nodes": [
+          "updateDocument",
+          "validateOTP",
+          "evaluateCondition"
+        ],
+        "files_touched": [
+          "services/search-service/src/searchIndex.ts"
+        ],
+        "overlap_zone": 21,
+        "expected_conflict_class": "B",
+        "service": "search-service",
+        "description": "Document updateDocument, validateOTP (+1 more) in search-service",
+        "tags": [
+          "class:B",
+          "zone:21",
+          "intent:docs_only"
+        ]
+      },
+      "agentId": "agent-z21-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMAM...",
+      "intentMismatch": false,
+      "durationMs": 27500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 290311,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0075",
+        "agent_id": "agent-z21-2",
+        "intent": {
+          "security_fix": {
+            "severity": "low",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "updateDocument",
+          "validateOTP",
+          "evaluateCondition"
+        ],
+        "files_touched": [
+          "services/search-service/src/searchIndex.ts"
+        ],
+        "overlap_zone": 21,
+        "expected_conflict_class": "B",
+        "service": "search-service",
+        "description": "Patch security issue in updateDocument, validateOTP (+1 more) in search-service",
+        "tags": [
+          "class:B",
+          "zone:21",
+          "intent:security_fix",
+          "severity:low"
+        ]
+      },
+      "agentId": "agent-z21-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMBG...",
+      "intentMismatch": false,
+      "durationMs": 28100,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 272328,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0082",
+        "agent_id": "agent-z22-5",
+        "intent": {
+          "refactor": {
+            "pattern": "move_symbol"
+          }
+        },
+        "touched_nodes": [
+          "groupByDimension",
+          "findByUsername",
+          "taskStore.update"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/reportGenerator.ts"
+        ],
+        "overlap_zone": 22,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Refactor groupByDimension, findByUsername (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:22",
+          "intent:refactor",
+          "pattern:move_symbol"
+        ]
+      },
+      "agentId": "agent-z22-5",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCMC9...",
+      "intentMismatch": false,
+      "durationMs": 26200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292200,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0078",
+        "agent_id": "agent-z22-1",
+        "intent": "exploratory",
+        "touched_nodes": [
+          "groupByDimension",
+          "findByUsername",
+          "taskStore.update"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/reportGenerator.ts"
+        ],
+        "overlap_zone": 22,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Explore groupByDimension, findByUsername (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:22",
+          "intent:exploratory"
+        ]
+      },
+      "agentId": "agent-z22-1",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCMD3...",
+      "intentMismatch": false,
+      "durationMs": 22800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248672,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0086",
+        "agent_id": "agent-z23-4",
+        "intent": {
+          "refactor": {
+            "pattern": "push_down_method"
+          }
+        },
+        "touched_nodes": [
+          "buildQuery",
+          "uploadBlob",
+          "PaginationOptions",
+          "findById",
+          "calculateSLA"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 23,
+        "expected_conflict_class": "C",
+        "service": "search-service",
+        "description": "Refactor buildQuery, uploadBlob (+3 more) in search-service",
+        "tags": [
+          "class:C",
+          "zone:23",
+          "intent:refactor",
+          "pattern:push_down_method"
+        ]
+      },
+      "agentId": "agent-z23-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMDV...",
+      "intentMismatch": false,
+      "durationMs": 24100,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 165845,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0085",
+        "agent_id": "agent-z23-3",
+        "intent": {
+          "refactor": {
+            "pattern": "pull_up_field"
+          }
+        },
+        "touched_nodes": [
+          "buildQuery",
+          "uploadBlob",
+          "PaginationOptions",
+          "findById",
+          "calculateSLA"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 23,
+        "expected_conflict_class": "C",
+        "service": "search-service",
+        "description": "Refactor buildQuery, uploadBlob (+3 more) in search-service",
+        "tags": [
+          "class:C",
+          "zone:23",
+          "intent:refactor",
+          "pattern:pull_up_field"
+        ]
+      },
+      "agentId": "agent-z23-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMEM...",
+      "intentMismatch": false,
+      "durationMs": 25000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 249953,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0089",
+        "agent_id": "agent-z24-2",
+        "intent": {
+          "feature_add": {
+            "surface": "new_field"
+          }
+        },
+        "touched_nodes": [
+          "storeFile",
+          "getOrCompute",
+          "estimateTeamWorkload",
+          "metricsEndpoint"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 24,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Add feature to storeFile, getOrCompute (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:24",
+          "intent:feature_add",
+          "surface:new_field"
+        ]
+      },
+      "agentId": "agent-z24-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMFC...",
+      "intentMismatch": false,
+      "durationMs": 24000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 249155,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0090",
+        "agent_id": "agent-z24-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_variant"
+          }
+        },
+        "touched_nodes": [
+          "storeFile",
+          "getOrCompute",
+          "estimateTeamWorkload",
+          "metricsEndpoint"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 24,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Add feature to storeFile, getOrCompute (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:24",
+          "intent:feature_add",
+          "surface:new_variant"
+        ]
+      },
+      "agentId": "agent-z24-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMG5...",
+      "intentMismatch": false,
+      "durationMs": 26500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250679,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0092",
+        "agent_id": "agent-z25-1",
+        "intent": {
+          "feature_add": {
+            "surface": "new_endpoint"
+          }
+        },
+        "touched_nodes": [
+          "listBlobs",
+          "applyDateRange",
+          "assignRole",
+          "notificationsRouter"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 25,
+        "expected_conflict_class": "A",
+        "service": "storage-service",
+        "description": "Add feature to listBlobs, applyDateRange (+2 more) in storage-service",
+        "tags": [
+          "class:A",
+          "zone:25",
+          "intent:feature_add",
+          "surface:new_endpoint"
+        ]
+      },
+      "agentId": "agent-z25-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMGS...",
+      "intentMismatch": false,
+      "durationMs": 21000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248553,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0095",
+        "agent_id": "agent-z25-4",
+        "intent": {
+          "bug_fix": {
+            "defect": "off_by_one"
+          }
+        },
+        "touched_nodes": [
+          "listBlobs",
+          "applyDateRange",
+          "assignRole",
+          "notificationsRouter"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 25,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Fix bug in listBlobs, applyDateRange (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:25",
+          "intent:bug_fix",
+          "defect:off_by_one"
+        ]
+      },
+      "agentId": "agent-z25-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMHH...",
+      "intentMismatch": false,
+      "durationMs": 23000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250114,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0101",
+        "agent_id": "agent-z26-5",
+        "intent": {
+          "bug_fix": {
+            "defect": "input_validation"
+          }
+        },
+        "touched_nodes": [
+          "cancelNotification",
+          "copyBlob",
+          "deleteUser",
+          "listFiles",
+          "dbInsert"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 26,
+        "expected_conflict_class": "B",
+        "service": "notification-service",
+        "description": "Fix bug in cancelNotification, copyBlob (+3 more) in notification-service",
+        "tags": [
+          "class:B",
+          "zone:26",
+          "intent:bug_fix",
+          "defect:input_validation"
+        ]
+      },
+      "agentId": "agent-z26-5",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMJ5...",
+      "intentMismatch": false,
+      "durationMs": 20000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250181,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0097",
+        "agent_id": "agent-z26-1",
+        "intent": {
+          "bug_fix": {
+            "defect": "logic_error"
+          }
+        },
+        "touched_nodes": [
+          "cancelNotification",
+          "copyBlob",
+          "deleteUser",
+          "listFiles",
+          "dbInsert"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 26,
+        "expected_conflict_class": "B",
+        "service": "notification-service",
+        "description": "Fix bug in cancelNotification, copyBlob (+3 more) in notification-service",
+        "tags": [
+          "class:B",
+          "zone:26",
+          "intent:bug_fix",
+          "defect:logic_error"
+        ]
+      },
+      "agentId": "agent-z26-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMK0...",
+      "intentMismatch": false,
+      "durationMs": 32600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250297,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0105",
+        "agent_id": "agent-z27-4",
+        "intent": {
+          "cleanup": {
+            "kind": "comment_only"
+          }
+        },
+        "touched_nodes": [
+          "ReportGeneratedEvent",
+          "drainCache",
+          "taskStore.findByParent",
+          "refreshAccessToken",
+          "downloadBlob"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 27,
+        "expected_conflict_class": "C",
+        "service": "shared",
+        "description": "Clean up ReportGeneratedEvent, drainCache (+3 more) in shared",
+        "tags": [
+          "class:C",
+          "zone:27",
+          "intent:cleanup",
+          "kind:comment_only"
+        ]
+      },
+      "agentId": "agent-z27-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMKV...",
+      "intentMismatch": false,
+      "durationMs": 21700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250001,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0104",
+        "agent_id": "agent-z27-3",
+        "intent": {
+          "cleanup": {
+            "kind": "format_only"
+          }
+        },
+        "touched_nodes": [
+          "ReportGeneratedEvent",
+          "drainCache",
+          "taskStore.findByParent",
+          "refreshAccessToken",
+          "downloadBlob"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 27,
+        "expected_conflict_class": "C",
+        "service": "shared",
+        "description": "Clean up ReportGeneratedEvent, drainCache (+3 more) in shared",
+        "tags": [
+          "class:C",
+          "zone:27",
+          "intent:cleanup",
+          "kind:format_only"
+        ]
+      },
+      "agentId": "agent-z27-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMMF...",
+      "intentMismatch": false,
+      "durationMs": 23800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 250424,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0108",
+        "agent_id": "agent-z28-3",
+        "intent": {
+          "performance": {
+            "axis": "memory"
+          }
+        },
+        "touched_nodes": [
+          "compensate",
+          "computeChecksum",
+          "getWorkflowState"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/workflowEngine.ts"
+        ],
+        "overlap_zone": 28,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Optimize compensate, computeChecksum (+1 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:28",
+          "intent:performance",
+          "axis:memory"
+        ]
+      },
+      "agentId": "agent-z28-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMN5...",
+      "intentMismatch": false,
+      "durationMs": 29700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248488,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0106",
+        "agent_id": "agent-z28-1",
+        "intent": {
+          "cleanup": {
+            "kind": "rename_for_clarity"
+          }
+        },
+        "touched_nodes": [
+          "compensate",
+          "computeChecksum",
+          "getWorkflowState"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/workflowEngine.ts"
+        ],
+        "overlap_zone": 28,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Clean up compensate, computeChecksum (+1 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:28",
+          "intent:cleanup",
+          "kind:rename_for_clarity"
+        ]
+      },
+      "agentId": "agent-z28-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMP3...",
+      "intentMismatch": false,
+      "durationMs": 26800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 291922,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0110",
+        "agent_id": "agent-z29-2",
+        "intent": {
+          "performance": {
+            "axis": "startup_time"
+          }
+        },
+        "touched_nodes": [
+          "TaskFilter",
+          "listTasks",
+          "exportToInflux",
+          "buildAggregation"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 29,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Optimize TaskFilter, listTasks (+2 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:29",
+          "intent:performance",
+          "axis:startup_time"
+        ]
+      },
+      "agentId": "agent-z29-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMPX...",
+      "intentMismatch": false,
+      "durationMs": 27700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292311,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0109",
+        "agent_id": "agent-z29-1",
+        "intent": {
+          "performance": {
+            "axis": "throughput"
+          }
+        },
+        "touched_nodes": [
+          "TaskFilter",
+          "listTasks",
+          "exportToInflux",
+          "buildAggregation"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 29,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Optimize TaskFilter, listTasks (+2 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:29",
+          "intent:performance",
+          "axis:throughput"
+        ]
+      },
+      "agentId": "agent-z29-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMR5...",
+      "intentMismatch": false,
+      "durationMs": 40300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 294422,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0115",
+        "agent_id": "agent-z30-4",
+        "intent": {
+          "test_add": {
+            "covers": [
+              "taskStore.count",
+              "UserFilter",
+              "cancelReport"
+            ]
+          }
+        },
+        "touched_nodes": [
+          "taskStore.count",
+          "UserFilter",
+          "cancelReport"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 30,
+        "expected_conflict_class": "A",
+        "service": "task-service",
+        "description": "Add tests covering taskStore.count, UserFilter (+1 more) in task-service",
+        "tags": [
+          "class:A",
+          "zone:30",
+          "intent:test_add"
+        ]
+      },
+      "agentId": "agent-z30-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMRV...",
+      "intentMismatch": false,
+      "durationMs": 22900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 188223,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0114",
+        "agent_id": "agent-z30-3",
+        "intent": {
+          "security_fix": {
+            "severity": "low",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "taskStore.count",
+          "UserFilter",
+          "cancelReport"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 30,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Patch security issue in taskStore.count, UserFilter (+1 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:30",
+          "intent:security_fix",
+          "severity:low"
+        ]
+      },
+      "agentId": "agent-z30-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMSP...",
+      "intentMismatch": false,
+      "durationMs": 26900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 293921,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    }
+  ],
+  "coordinated": [
+    {
+      "task": {
+        "id": "T0004",
+        "agent_id": "agent-z01-4",
+        "intent": {
+          "refactor": {
+            "pattern": "move_symbol"
+          }
+        },
+        "touched_nodes": [
+          "reopenTask",
+          "archiveTask",
+          "auditBuffer"
+        ],
+        "files_touched": [
+          "services/task-service/src/taskController.ts"
+        ],
+        "overlap_zone": 1,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Refactor reopenTask, archiveTask (+1 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:1",
+          "intent:refactor",
+          "pattern:move_symbol"
+        ]
+      },
+      "agentId": "agent-z01-4",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCMTH...",
+      "intentMismatch": false,
+      "durationMs": 22400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248226,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0005",
+        "agent_id": "agent-z01-5",
+        "intent": {
+          "refactor": {
+            "pattern": "change_signature"
+          }
+        },
+        "touched_nodes": [
+          "reopenTask",
+          "archiveTask",
+          "auditBuffer"
+        ],
+        "files_touched": [
+          "services/task-service/src/taskController.ts"
+        ],
+        "overlap_zone": 1,
+        "expected_conflict_class": "C",
+        "service": "task-service",
+        "description": "Refactor reopenTask, archiveTask (+1 more) in task-service",
+        "tags": [
+          "class:C",
+          "zone:1",
+          "intent:refactor",
+          "pattern:change_signature"
+        ]
+      },
+      "agentId": "agent-z01-5",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 16900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0006",
+        "agent_id": "agent-z02-1",
+        "intent": {
+          "refactor": {
+            "pattern": "extract_interface"
+          }
+        },
+        "touched_nodes": [
+          "deleteBlob",
+          "getUser",
+          "updateTask",
+          "rollback"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 2,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Refactor deleteBlob, getUser (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:2",
+          "intent:refactor",
+          "pattern:extract_interface"
+        ]
+      },
+      "agentId": "agent-z02-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMVR...",
+      "intentMismatch": false,
+      "durationMs": 23700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 249719,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0008",
+        "agent_id": "agent-z02-3",
+        "intent": {
+          "refactor": {
+            "pattern": "push_down_method"
+          }
+        },
+        "touched_nodes": [
+          "deleteBlob",
+          "getUser",
+          "updateTask",
+          "rollback"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 2,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Refactor deleteBlob, getUser (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:2",
+          "intent:refactor",
+          "pattern:push_down_method"
+        ]
+      },
+      "agentId": "agent-z02-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 15900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0012",
+        "agent_id": "agent-z03-4",
+        "intent": {
+          "feature_add": {
+            "surface": "new_variant"
+          }
+        },
+        "touched_nodes": [
+          "bulkInsert",
+          "assignTask",
+          "bodyParser",
+          "streamBlob"
+        ],
+        "files_touched": [
+          "services/user-service/src/userRepository.ts"
+        ],
+        "overlap_zone": 3,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Add feature to bulkInsert, assignTask (+2 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:3",
+          "intent:feature_add",
+          "surface:new_variant"
+        ]
+      },
+      "agentId": "agent-z03-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMX2...",
+      "intentMismatch": false,
+      "durationMs": 26800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248532,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0011",
+        "agent_id": "agent-z03-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_field"
+          }
+        },
+        "touched_nodes": [
+          "bulkInsert",
+          "assignTask",
+          "bodyParser",
+          "streamBlob"
+        ],
+        "files_touched": [
+          "services/user-service/src/userRepository.ts"
+        ],
+        "overlap_zone": 3,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Add feature to bulkInsert, assignTask (+2 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:3",
+          "intent:feature_add",
+          "surface:new_field"
+        ]
+      },
+      "agentId": "agent-z03-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 17800,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0013",
+        "agent_id": "agent-z04-1",
+        "intent": {
+          "feature_add": {
+            "surface": "new_module"
+          }
+        },
+        "touched_nodes": [
+          "extractBearerToken",
+          "isTokenExpired",
+          "getActivityFeed"
+        ],
+        "files_touched": [
+          "shared/utils/auth.ts"
+        ],
+        "overlap_zone": 4,
+        "expected_conflict_class": "A",
+        "service": "shared",
+        "description": "Add feature to extractBearerToken, isTokenExpired (+1 more) in shared",
+        "tags": [
+          "class:A",
+          "zone:4",
+          "intent:feature_add",
+          "surface:new_module"
+        ]
+      },
+      "agentId": "agent-z04-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMY8...",
+      "intentMismatch": false,
+      "durationMs": 21600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248165,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0015",
+        "agent_id": "agent-z04-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_migration"
+          }
+        },
+        "touched_nodes": [
+          "extractBearerToken",
+          "isTokenExpired",
+          "getActivityFeed"
+        ],
+        "files_touched": [
+          "shared/utils/auth.ts"
+        ],
+        "overlap_zone": 4,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Add feature to extractBearerToken, isTokenExpired (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:4",
+          "intent:feature_add",
+          "surface:new_migration"
+        ]
+      },
+      "agentId": "agent-z04-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 17500,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0018",
+        "agent_id": "agent-z05-3",
+        "intent": {
+          "bug_fix": {
+            "defect": "race_condition"
+          }
+        },
+        "touched_nodes": [
+          "DomainEvent",
+          "taskStore.findByAssignee",
+          "findByEmail",
+          "queueEmail"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 5,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Fix bug in DomainEvent, taskStore.findByAssignee (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:5",
+          "intent:bug_fix",
+          "defect:race_condition"
+        ]
+      },
+      "agentId": "agent-z05-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCMZE...",
+      "intentMismatch": false,
+      "durationMs": 20600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248599,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0019",
+        "agent_id": "agent-z05-4",
+        "intent": {
+          "bug_fix": {
+            "defect": "logic_error"
+          }
+        },
+        "touched_nodes": [
+          "DomainEvent",
+          "taskStore.findByAssignee",
+          "findByEmail",
+          "queueEmail"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 5,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Fix bug in DomainEvent, taskStore.findByAssignee (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:5",
+          "intent:bug_fix",
+          "defect:logic_error"
+        ]
+      },
+      "agentId": "agent-z05-4",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 17100,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0021",
+        "agent_id": "agent-z06-2",
+        "intent": {
+          "bug_fix": {
+            "defect": "resource_leak"
+          }
+        },
+        "touched_nodes": [
+          "retrieveFile",
+          "validateQuery",
+          "gracefulShutdown"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 6,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Fix bug in retrieveFile, validateQuery (+1 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:6",
+          "intent:bug_fix",
+          "defect:resource_leak"
+        ]
+      },
+      "agentId": "agent-z06-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN0K...",
+      "intentMismatch": false,
+      "durationMs": 22300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 246149,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0020",
+        "agent_id": "agent-z06-1",
+        "intent": {
+          "bug_fix": {
+            "defect": "type_error"
+          }
+        },
+        "touched_nodes": [
+          "retrieveFile",
+          "validateQuery",
+          "gracefulShutdown"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 6,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Fix bug in retrieveFile, validateQuery (+1 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:6",
+          "intent:bug_fix",
+          "defect:type_error"
+        ]
+      },
+      "agentId": "agent-z06-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 16000,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0024",
+        "agent_id": "agent-z07-2",
+        "intent": {
+          "cleanup": {
+            "kind": "dead_code"
+          }
+        },
+        "touched_nodes": [
+          "TaskCreatedEvent",
+          "scheduleReport",
+          "corsConfig",
+          "getFileMetadata",
+          "injectUser"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 7,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Clean up TaskCreatedEvent, scheduleReport (+3 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:7",
+          "intent:cleanup",
+          "kind:dead_code"
+        ]
+      },
+      "agentId": "agent-z07-2",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCN1Q...",
+      "intentMismatch": false,
+      "durationMs": 19400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 246956,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0025",
+        "agent_id": "agent-z07-3",
+        "intent": {
+          "cleanup": {
+            "kind": "unused_import"
+          }
+        },
+        "touched_nodes": [
+          "TaskCreatedEvent",
+          "scheduleReport",
+          "corsConfig",
+          "getFileMetadata",
+          "injectUser"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 7,
+        "expected_conflict_class": "C",
+        "service": "shared",
+        "description": "Clean up TaskCreatedEvent, scheduleReport (+3 more) in shared",
+        "tags": [
+          "class:C",
+          "zone:7",
+          "intent:cleanup",
+          "kind:unused_import"
+        ]
+      },
+      "agentId": "agent-z07-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18700,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0029",
+        "agent_id": "agent-z08-4",
+        "intent": {
+          "performance": {
+            "axis": "latency"
+          }
+        },
+        "touched_nodes": [
+          "getMetricSummary",
+          "decodeToken",
+          "updateBio"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/metricsCollector.ts"
+        ],
+        "overlap_zone": 8,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Optimize getMetricSummary, decodeToken (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:8",
+          "intent:performance",
+          "axis:latency"
+        ]
+      },
+      "agentId": "agent-z08-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN2Z...",
+      "intentMismatch": false,
+      "durationMs": 22400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248145,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0028",
+        "agent_id": "agent-z08-3",
+        "intent": {
+          "cleanup": {
+            "kind": "rename_for_clarity"
+          }
+        },
+        "touched_nodes": [
+          "getMetricSummary",
+          "decodeToken",
+          "updateBio"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/metricsCollector.ts"
+        ],
+        "overlap_zone": 8,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Clean up getMetricSummary, decodeToken (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:8",
+          "intent:cleanup",
+          "kind:rename_for_clarity"
+        ]
+      },
+      "agentId": "agent-z08-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 15900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0031",
+        "agent_id": "agent-z09-2",
+        "intent": {
+          "performance": {
+            "axis": "throughput"
+          }
+        },
+        "touched_nodes": [
+          "HealthStatus",
+          "bulkIndex",
+          "BlobUploadedEvent",
+          "PRIORITY_MULTIPLIERS",
+          "WorkflowStartedEvent"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 9,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Optimize HealthStatus, bulkIndex (+3 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:9",
+          "intent:performance",
+          "axis:throughput"
+        ]
+      },
+      "agentId": "agent-z09-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN43...",
+      "intentMismatch": false,
+      "durationMs": 22200,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248645,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0033",
+        "agent_id": "agent-z09-4",
+        "intent": {
+          "security_fix": {
+            "severity": "critical",
+            "cve": "CVE-2024-0001"
+          }
+        },
+        "touched_nodes": [
+          "HealthStatus",
+          "bulkIndex",
+          "BlobUploadedEvent",
+          "PRIORITY_MULTIPLIERS",
+          "WorkflowStartedEvent"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 9,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Patch security issue in HealthStatus, bulkIndex (+3 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:9",
+          "intent:security_fix",
+          "severity:critical",
+          "cve:CVE-2024-0001"
+        ]
+      },
+      "agentId": "agent-z09-4",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 15800,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0036",
+        "agent_id": "agent-z10-3",
+        "intent": {
+          "security_fix": {
+            "severity": "low",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "formatAuditEntry",
+          "createIndex",
+          "stopCollector"
+        ],
+        "files_touched": [
+          "shared/utils/audit.ts"
+        ],
+        "overlap_zone": 10,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Patch security issue in formatAuditEntry, createIndex (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:10",
+          "intent:security_fix",
+          "severity:low"
+        ]
+      },
+      "agentId": "agent-z10-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN56...",
+      "intentMismatch": false,
+      "durationMs": 20700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 247722,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0037",
+        "agent_id": "agent-z10-4",
+        "intent": {
+          "test_add": {
+            "covers": [
+              "formatAuditEntry",
+              "createIndex",
+              "stopCollector"
+            ]
+          }
+        },
+        "touched_nodes": [
+          "formatAuditEntry",
+          "createIndex",
+          "stopCollector"
+        ],
+        "files_touched": [
+          "shared/utils/audit.ts"
+        ],
+        "overlap_zone": 10,
+        "expected_conflict_class": "A",
+        "service": "shared",
+        "description": "Add tests covering formatAuditEntry, createIndex (+1 more) in shared",
+        "tags": [
+          "class:A",
+          "zone:10",
+          "intent:test_add"
+        ]
+      },
+      "agentId": "agent-z10-4",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 19600,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0038",
+        "agent_id": "agent-z11-1",
+        "intent": "docs_only",
+        "touched_nodes": [
+          "subscribeToChannel",
+          "applyPagination",
+          "downloadReport",
+          "startFlushLoop"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 11,
+        "expected_conflict_class": "A",
+        "service": "notification-service",
+        "description": "Document subscribeToChannel, applyPagination (+2 more) in notification-service",
+        "tags": [
+          "class:A",
+          "zone:11",
+          "intent:docs_only"
+        ]
+      },
+      "agentId": "agent-z11-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN6G...",
+      "intentMismatch": false,
+      "durationMs": 21300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248210,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0040",
+        "agent_id": "agent-z11-3",
+        "intent": {
+          "refactor": {
+            "pattern": "rename_symbol"
+          }
+        },
+        "touched_nodes": [
+          "subscribeToChannel",
+          "applyPagination",
+          "downloadReport",
+          "startFlushLoop"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 11,
+        "expected_conflict_class": "B",
+        "service": "notification-service",
+        "description": "Refactor subscribeToChannel, applyPagination (+2 more) in notification-service",
+        "tags": [
+          "class:B",
+          "zone:11",
+          "intent:refactor",
+          "pattern:rename_symbol"
+        ]
+      },
+      "agentId": "agent-z11-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 19700,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0042",
+        "agent_id": "agent-z12-2",
+        "intent": {
+          "refactor": {
+            "pattern": "inline_function"
+          }
+        },
+        "touched_nodes": [
+          "blacklistToken",
+          "recordEvent",
+          "markRead",
+          "sessionMiddleware",
+          "retryStep"
+        ],
+        "files_touched": [
+          "services/auth-service/src/authService.ts"
+        ],
+        "overlap_zone": 12,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Refactor blacklistToken, recordEvent (+3 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:12",
+          "intent:refactor",
+          "pattern:inline_function"
+        ]
+      },
+      "agentId": "agent-z12-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN7Q...",
+      "intentMismatch": false,
+      "durationMs": 23600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 249531,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0041",
+        "agent_id": "agent-z12-1",
+        "intent": {
+          "refactor": {
+            "pattern": "extract_function"
+          }
+        },
+        "touched_nodes": [
+          "blacklistToken",
+          "recordEvent",
+          "markRead",
+          "sessionMiddleware",
+          "retryStep"
+        ],
+        "files_touched": [
+          "services/auth-service/src/authService.ts"
+        ],
+        "overlap_zone": 12,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Refactor blacklistToken, recordEvent (+3 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:12",
+          "intent:refactor",
+          "pattern:extract_function"
+        ]
+      },
+      "agentId": "agent-z12-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0046",
+        "agent_id": "agent-z13-3",
+        "intent": {
+          "refactor": {
+            "pattern": "pull_up_field"
+          }
+        },
+        "touched_nodes": [
+          "resumeWorkflow",
+          "getReportStatus",
+          "listUsers",
+          "renderTemplate"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 13,
+        "expected_conflict_class": "C",
+        "service": "workflow-service",
+        "description": "Refactor resumeWorkflow, getReportStatus (+2 more) in workflow-service",
+        "tags": [
+          "class:C",
+          "zone:13",
+          "intent:refactor",
+          "pattern:pull_up_field"
+        ]
+      },
+      "agentId": "agent-z13-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCN8Z...",
+      "intentMismatch": false,
+      "durationMs": 22400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 271263,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0044",
+        "agent_id": "agent-z13-1",
+        "intent": {
+          "refactor": {
+            "pattern": "change_signature"
+          }
+        },
+        "touched_nodes": [
+          "resumeWorkflow",
+          "getReportStatus",
+          "listUsers",
+          "renderTemplate"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 13,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Refactor resumeWorkflow, getReportStatus (+2 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:13",
+          "intent:refactor",
+          "pattern:change_signature"
+        ]
+      },
+      "agentId": "agent-z13-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 19300,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0049",
+        "agent_id": "agent-z14-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_symbol"
+          }
+        },
+        "touched_nodes": [
+          "applySort",
+          "scheduleTimeout",
+          "taskStore.paginate",
+          "revokeRole",
+          "setBlobMetadata"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 14,
+        "expected_conflict_class": "A",
+        "service": "search-service",
+        "description": "Add feature to applySort, scheduleTimeout (+3 more) in search-service",
+        "tags": [
+          "class:A",
+          "zone:14",
+          "intent:feature_add",
+          "surface:new_symbol"
+        ]
+      },
+      "agentId": "agent-z14-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNA9...",
+      "intentMismatch": false,
+      "durationMs": 25700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292507,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0050",
+        "agent_id": "agent-z14-4",
+        "intent": {
+          "feature_add": {
+            "surface": "new_field"
+          }
+        },
+        "touched_nodes": [
+          "applySort",
+          "scheduleTimeout",
+          "taskStore.paginate",
+          "revokeRole",
+          "setBlobMetadata"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 14,
+        "expected_conflict_class": "B",
+        "service": "search-service",
+        "description": "Add feature to applySort, scheduleTimeout (+3 more) in search-service",
+        "tags": [
+          "class:B",
+          "zone:14",
+          "intent:feature_add",
+          "surface:new_field"
+        ]
+      },
+      "agentId": "agent-z14-4",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 19900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0053",
+        "agent_id": "agent-z15-2",
+        "intent": {
+          "feature_add": {
+            "surface": "new_endpoint"
+          }
+        },
+        "touched_nodes": [
+          "assignStep",
+          "getPreferences",
+          "rateLimiter",
+          "retryFailedEmails",
+          "tasksRouter"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 15,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Add feature to assignStep, getPreferences (+3 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:15",
+          "intent:feature_add",
+          "surface:new_endpoint"
+        ]
+      },
+      "agentId": "agent-z15-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNBN...",
+      "intentMismatch": false,
+      "durationMs": 24500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 271328,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0054",
+        "agent_id": "agent-z15-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_migration"
+          }
+        },
+        "touched_nodes": [
+          "assignStep",
+          "getPreferences",
+          "rateLimiter",
+          "retryFailedEmails",
+          "tasksRouter"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/WorkflowService.ts"
+        ],
+        "overlap_zone": 15,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Add feature to assignStep, getPreferences (+3 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:15",
+          "intent:feature_add",
+          "surface:new_migration"
+        ]
+      },
+      "agentId": "agent-z15-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 21200,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0056",
+        "agent_id": "agent-z16-2",
+        "intent": {
+          "bug_fix": {
+            "defect": "off_by_one"
+          }
+        },
+        "touched_nodes": [
+          "requireAuth",
+          "ApiResponse",
+          "requirePermission"
+        ],
+        "files_touched": [
+          "services/auth-service/src/middleware.ts"
+        ],
+        "overlap_zone": 16,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Fix bug in requireAuth, ApiResponse (+1 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:16",
+          "intent:bug_fix",
+          "defect:off_by_one"
+        ]
+      },
+      "agentId": "agent-z16-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCND3...",
+      "intentMismatch": false,
+      "durationMs": 25900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292068,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0055",
+        "agent_id": "agent-z16-1",
+        "intent": {
+          "bug_fix": {
+            "defect": "null_handling"
+          }
+        },
+        "touched_nodes": [
+          "requireAuth",
+          "ApiResponse",
+          "requirePermission"
+        ],
+        "files_touched": [
+          "services/auth-service/src/middleware.ts"
+        ],
+        "overlap_zone": 16,
+        "expected_conflict_class": "B",
+        "service": "auth-service",
+        "description": "Fix bug in requireAuth, ApiResponse (+1 more) in auth-service",
+        "tags": [
+          "class:B",
+          "zone:16",
+          "intent:bug_fix",
+          "defect:null_handling"
+        ]
+      },
+      "agentId": "agent-z16-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 19100,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0060",
+        "agent_id": "agent-z17-2",
+        "intent": {
+          "bug_fix": {
+            "defect": "resource_leak"
+          }
+        },
+        "touched_nodes": [
+          "createUser",
+          "requestLogger",
+          "Permission"
+        ],
+        "files_touched": [
+          "services/user-service/src/userController.ts"
+        ],
+        "overlap_zone": 17,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Fix bug in createUser, requestLogger (+1 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:17",
+          "intent:bug_fix",
+          "defect:resource_leak"
+        ]
+      },
+      "agentId": "agent-z17-2",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 26800,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0061",
+        "agent_id": "agent-z17-3",
+        "intent": {
+          "bug_fix": {
+            "defect": "regression"
+          }
+        },
+        "touched_nodes": [
+          "createUser",
+          "requestLogger",
+          "Permission"
+        ],
+        "files_touched": [
+          "services/user-service/src/userController.ts"
+        ],
+        "overlap_zone": 17,
+        "expected_conflict_class": "B",
+        "service": "user-service",
+        "description": "Fix bug in createUser, requestLogger (+1 more) in user-service",
+        "tags": [
+          "class:B",
+          "zone:17",
+          "intent:bug_fix",
+          "defect:regression"
+        ]
+      },
+      "agentId": "agent-z17-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0064",
+        "agent_id": "agent-z18-2",
+        "intent": {
+          "cleanup": {
+            "kind": "unused_import"
+          }
+        },
+        "touched_nodes": [
+          "getUnreadCount",
+          "refreshAccessToken",
+          "executeAction"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 18,
+        "expected_conflict_class": "C",
+        "service": "notification-service",
+        "description": "Clean up getUnreadCount, refreshAccessToken (+1 more) in notification-service",
+        "tags": [
+          "class:C",
+          "zone:18",
+          "intent:cleanup",
+          "kind:unused_import"
+        ]
+      },
+      "agentId": "agent-z18-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNFW...",
+      "intentMismatch": false,
+      "durationMs": 27300,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 291857,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0066",
+        "agent_id": "agent-z18-4",
+        "intent": {
+          "cleanup": {
+            "kind": "comment_only"
+          }
+        },
+        "touched_nodes": [
+          "getUnreadCount",
+          "refreshAccessToken",
+          "executeAction"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 18,
+        "expected_conflict_class": "C",
+        "service": "notification-service",
+        "description": "Clean up getUnreadCount, refreshAccessToken (+1 more) in notification-service",
+        "tags": [
+          "class:C",
+          "zone:18",
+          "intent:cleanup",
+          "kind:comment_only"
+        ]
+      },
+      "agentId": "agent-z18-4",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18100,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0067",
+        "agent_id": "agent-z19-1",
+        "intent": {
+          "cleanup": {
+            "kind": "rename_for_clarity"
+          }
+        },
+        "touched_nodes": [
+          "AuditEntry",
+          "UserRegisteredEvent",
+          "listWithPagination"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 19,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Clean up AuditEntry, UserRegisteredEvent (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:19",
+          "intent:cleanup",
+          "kind:rename_for_clarity"
+        ]
+      },
+      "agentId": "agent-z19-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNH6...",
+      "intentMismatch": false,
+      "durationMs": 23000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 313563,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0069",
+        "agent_id": "agent-z19-3",
+        "intent": {
+          "performance": {
+            "axis": "memory"
+          }
+        },
+        "touched_nodes": [
+          "AuditEntry",
+          "UserRegisteredEvent",
+          "listWithPagination"
+        ],
+        "files_touched": [
+          "shared/types/index.ts"
+        ],
+        "overlap_zone": 19,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Optimize AuditEntry, UserRegisteredEvent (+1 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:19",
+          "intent:performance",
+          "axis:memory"
+        ]
+      },
+      "agentId": "agent-z19-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 19100,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0073",
+        "agent_id": "agent-z20-4",
+        "intent": {
+          "security_fix": {
+            "severity": "high",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "getCacheStats",
+          "recordMetric",
+          "invalidateByPrefix",
+          "generateOTP"
+        ],
+        "files_touched": [
+          "shared/utils/cache.ts"
+        ],
+        "overlap_zone": 20,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Patch security issue in getCacheStats, recordMetric (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:20",
+          "intent:security_fix",
+          "severity:high"
+        ]
+      },
+      "agentId": "agent-z20-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNJK...",
+      "intentMismatch": false,
+      "durationMs": 28500,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292197,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0070",
+        "agent_id": "agent-z20-1",
+        "intent": {
+          "performance": {
+            "axis": "throughput"
+          }
+        },
+        "touched_nodes": [
+          "getCacheStats",
+          "recordMetric",
+          "invalidateByPrefix",
+          "generateOTP"
+        ],
+        "files_touched": [
+          "shared/utils/cache.ts"
+        ],
+        "overlap_zone": 20,
+        "expected_conflict_class": "B",
+        "service": "shared",
+        "description": "Optimize getCacheStats, recordMetric (+2 more) in shared",
+        "tags": [
+          "class:B",
+          "zone:20",
+          "intent:performance",
+          "axis:throughput"
+        ]
+      },
+      "agentId": "agent-z20-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18900,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0077",
+        "agent_id": "agent-z21-4",
+        "intent": "docs_only",
+        "touched_nodes": [
+          "updateDocument",
+          "validateOTP",
+          "evaluateCondition"
+        ],
+        "files_touched": [
+          "services/search-service/src/searchIndex.ts"
+        ],
+        "overlap_zone": 21,
+        "expected_conflict_class": "B",
+        "service": "search-service",
+        "description": "Document updateDocument, validateOTP (+1 more) in search-service",
+        "tags": [
+          "class:B",
+          "zone:21",
+          "intent:docs_only"
+        ]
+      },
+      "agentId": "agent-z21-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNM1...",
+      "intentMismatch": false,
+      "durationMs": 22800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 246906,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0075",
+        "agent_id": "agent-z21-2",
+        "intent": {
+          "security_fix": {
+            "severity": "low",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "updateDocument",
+          "validateOTP",
+          "evaluateCondition"
+        ],
+        "files_touched": [
+          "services/search-service/src/searchIndex.ts"
+        ],
+        "overlap_zone": 21,
+        "expected_conflict_class": "B",
+        "service": "search-service",
+        "description": "Patch security issue in updateDocument, validateOTP (+1 more) in search-service",
+        "tags": [
+          "class:B",
+          "zone:21",
+          "intent:security_fix",
+          "severity:low"
+        ]
+      },
+      "agentId": "agent-z21-2",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 16500,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0082",
+        "agent_id": "agent-z22-5",
+        "intent": {
+          "refactor": {
+            "pattern": "move_symbol"
+          }
+        },
+        "touched_nodes": [
+          "groupByDimension",
+          "findByUsername",
+          "taskStore.update"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/reportGenerator.ts"
+        ],
+        "overlap_zone": 22,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Refactor groupByDimension, findByUsername (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:22",
+          "intent:refactor",
+          "pattern:move_symbol"
+        ]
+      },
+      "agentId": "agent-z22-5",
+      "skipped": false,
+      "conflictClass": "C",
+      "episodeId": "01KRCNN8...",
+      "intentMismatch": false,
+      "durationMs": 29100,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292281,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0078",
+        "agent_id": "agent-z22-1",
+        "intent": "exploratory",
+        "touched_nodes": [
+          "groupByDimension",
+          "findByUsername",
+          "taskStore.update"
+        ],
+        "files_touched": [
+          "services/analytics-service/src/reportGenerator.ts"
+        ],
+        "overlap_zone": 22,
+        "expected_conflict_class": "B",
+        "service": "analytics-service",
+        "description": "Explore groupByDimension, findByUsername (+1 more) in analytics-service",
+        "tags": [
+          "class:B",
+          "zone:22",
+          "intent:exploratory"
+        ]
+      },
+      "agentId": "agent-z22-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18500,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0086",
+        "agent_id": "agent-z23-4",
+        "intent": {
+          "refactor": {
+            "pattern": "push_down_method"
+          }
+        },
+        "touched_nodes": [
+          "buildQuery",
+          "uploadBlob",
+          "PaginationOptions",
+          "findById",
+          "calculateSLA"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 23,
+        "expected_conflict_class": "C",
+        "service": "search-service",
+        "description": "Refactor buildQuery, uploadBlob (+3 more) in search-service",
+        "tags": [
+          "class:C",
+          "zone:23",
+          "intent:refactor",
+          "pattern:push_down_method"
+        ]
+      },
+      "agentId": "agent-z23-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNPN...",
+      "intentMismatch": false,
+      "durationMs": 28700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292107,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0085",
+        "agent_id": "agent-z23-3",
+        "intent": {
+          "refactor": {
+            "pattern": "pull_up_field"
+          }
+        },
+        "touched_nodes": [
+          "buildQuery",
+          "uploadBlob",
+          "PaginationOptions",
+          "findById",
+          "calculateSLA"
+        ],
+        "files_touched": [
+          "services/search-service/src/queryBuilder.ts"
+        ],
+        "overlap_zone": 23,
+        "expected_conflict_class": "C",
+        "service": "search-service",
+        "description": "Refactor buildQuery, uploadBlob (+3 more) in search-service",
+        "tags": [
+          "class:C",
+          "zone:23",
+          "intent:refactor",
+          "pattern:pull_up_field"
+        ]
+      },
+      "agentId": "agent-z23-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 21500,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0089",
+        "agent_id": "agent-z24-2",
+        "intent": {
+          "feature_add": {
+            "surface": "new_field"
+          }
+        },
+        "touched_nodes": [
+          "storeFile",
+          "getOrCompute",
+          "estimateTeamWorkload",
+          "metricsEndpoint"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 24,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Add feature to storeFile, getOrCompute (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:24",
+          "intent:feature_add",
+          "surface:new_field"
+        ]
+      },
+      "agentId": "agent-z24-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNR3...",
+      "intentMismatch": false,
+      "durationMs": 25600,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 292222,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0090",
+        "agent_id": "agent-z24-3",
+        "intent": {
+          "feature_add": {
+            "surface": "new_variant"
+          }
+        },
+        "touched_nodes": [
+          "storeFile",
+          "getOrCompute",
+          "estimateTeamWorkload",
+          "metricsEndpoint"
+        ],
+        "files_touched": [
+          "services/storage-service/src/fileStore.ts"
+        ],
+        "overlap_zone": 24,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Add feature to storeFile, getOrCompute (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:24",
+          "intent:feature_add",
+          "surface:new_variant"
+        ]
+      },
+      "agentId": "agent-z24-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 15700,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0092",
+        "agent_id": "agent-z25-1",
+        "intent": {
+          "feature_add": {
+            "surface": "new_endpoint"
+          }
+        },
+        "touched_nodes": [
+          "listBlobs",
+          "applyDateRange",
+          "assignRole",
+          "notificationsRouter"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 25,
+        "expected_conflict_class": "A",
+        "service": "storage-service",
+        "description": "Add feature to listBlobs, applyDateRange (+2 more) in storage-service",
+        "tags": [
+          "class:A",
+          "zone:25",
+          "intent:feature_add",
+          "surface:new_endpoint"
+        ]
+      },
+      "agentId": "agent-z25-1",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNSE...",
+      "intentMismatch": false,
+      "durationMs": 20700,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 247332,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0095",
+        "agent_id": "agent-z25-4",
+        "intent": {
+          "bug_fix": {
+            "defect": "off_by_one"
+          }
+        },
+        "touched_nodes": [
+          "listBlobs",
+          "applyDateRange",
+          "assignRole",
+          "notificationsRouter"
+        ],
+        "files_touched": [
+          "services/storage-service/src/blobClient.ts"
+        ],
+        "overlap_zone": 25,
+        "expected_conflict_class": "B",
+        "service": "storage-service",
+        "description": "Fix bug in listBlobs, applyDateRange (+2 more) in storage-service",
+        "tags": [
+          "class:B",
+          "zone:25",
+          "intent:bug_fix",
+          "defect:off_by_one"
+        ]
+      },
+      "agentId": "agent-z25-4",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 17000,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0101",
+        "agent_id": "agent-z26-5",
+        "intent": {
+          "bug_fix": {
+            "defect": "input_validation"
+          }
+        },
+        "touched_nodes": [
+          "cancelNotification",
+          "copyBlob",
+          "deleteUser",
+          "listFiles",
+          "dbInsert"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 26,
+        "expected_conflict_class": "B",
+        "service": "notification-service",
+        "description": "Fix bug in cancelNotification, copyBlob (+3 more) in notification-service",
+        "tags": [
+          "class:B",
+          "zone:26",
+          "intent:bug_fix",
+          "defect:input_validation"
+        ]
+      },
+      "agentId": "agent-z26-5",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNTJ...",
+      "intentMismatch": false,
+      "durationMs": 26000,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 248288,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0097",
+        "agent_id": "agent-z26-1",
+        "intent": {
+          "bug_fix": {
+            "defect": "logic_error"
+          }
+        },
+        "touched_nodes": [
+          "cancelNotification",
+          "copyBlob",
+          "deleteUser",
+          "listFiles",
+          "dbInsert"
+        ],
+        "files_touched": [
+          "services/notification-service/src/notificationService.ts"
+        ],
+        "overlap_zone": 26,
+        "expected_conflict_class": "B",
+        "service": "notification-service",
+        "description": "Fix bug in cancelNotification, copyBlob (+3 more) in notification-service",
+        "tags": [
+          "class:B",
+          "zone:26",
+          "intent:bug_fix",
+          "defect:logic_error"
+        ]
+      },
+      "agentId": "agent-z26-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 16300,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0105",
+        "agent_id": "agent-z27-4",
+        "intent": {
+          "cleanup": {
+            "kind": "comment_only"
+          }
+        },
+        "touched_nodes": [
+          "ReportGeneratedEvent",
+          "drainCache",
+          "taskStore.findByParent",
+          "refreshAccessToken",
+          "downloadBlob"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 27,
+        "expected_conflict_class": "C",
+        "service": "shared",
+        "description": "Clean up ReportGeneratedEvent, drainCache (+3 more) in shared",
+        "tags": [
+          "class:C",
+          "zone:27",
+          "intent:cleanup",
+          "kind:comment_only"
+        ]
+      },
+      "agentId": "agent-z27-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNVX...",
+      "intentMismatch": false,
+      "durationMs": 26400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 268669,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0104",
+        "agent_id": "agent-z27-3",
+        "intent": {
+          "cleanup": {
+            "kind": "format_only"
+          }
+        },
+        "touched_nodes": [
+          "ReportGeneratedEvent",
+          "drainCache",
+          "taskStore.findByParent",
+          "refreshAccessToken",
+          "downloadBlob"
+        ],
+        "files_touched": [
+          "shared/events/index.ts"
+        ],
+        "overlap_zone": 27,
+        "expected_conflict_class": "C",
+        "service": "shared",
+        "description": "Clean up ReportGeneratedEvent, drainCache (+3 more) in shared",
+        "tags": [
+          "class:C",
+          "zone:27",
+          "intent:cleanup",
+          "kind:format_only"
+        ]
+      },
+      "agentId": "agent-z27-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 16200,
+      "tokenUsage": null,
+      "skippedBlastRadius": 5
+    },
+    {
+      "task": {
+        "id": "T0108",
+        "agent_id": "agent-z28-3",
+        "intent": {
+          "performance": {
+            "axis": "memory"
+          }
+        },
+        "touched_nodes": [
+          "compensate",
+          "computeChecksum",
+          "getWorkflowState"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/workflowEngine.ts"
+        ],
+        "overlap_zone": 28,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Optimize compensate, computeChecksum (+1 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:28",
+          "intent:performance",
+          "axis:memory"
+        ]
+      },
+      "agentId": "agent-z28-3",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNX7...",
+      "intentMismatch": false,
+      "durationMs": 27900,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 269782,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0106",
+        "agent_id": "agent-z28-1",
+        "intent": {
+          "cleanup": {
+            "kind": "rename_for_clarity"
+          }
+        },
+        "touched_nodes": [
+          "compensate",
+          "computeChecksum",
+          "getWorkflowState"
+        ],
+        "files_touched": [
+          "services/workflow-service/src/workflowEngine.ts"
+        ],
+        "overlap_zone": 28,
+        "expected_conflict_class": "B",
+        "service": "workflow-service",
+        "description": "Clean up compensate, computeChecksum (+1 more) in workflow-service",
+        "tags": [
+          "class:B",
+          "zone:28",
+          "intent:cleanup",
+          "kind:rename_for_clarity"
+        ]
+      },
+      "agentId": "agent-z28-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 15600,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    },
+    {
+      "task": {
+        "id": "T0110",
+        "agent_id": "agent-z29-2",
+        "intent": {
+          "performance": {
+            "axis": "startup_time"
+          }
+        },
+        "touched_nodes": [
+          "TaskFilter",
+          "listTasks",
+          "exportToInflux",
+          "buildAggregation"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 29,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Optimize TaskFilter, listTasks (+2 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:29",
+          "intent:performance",
+          "axis:startup_time"
+        ]
+      },
+      "agentId": "agent-z29-2",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNYG...",
+      "intentMismatch": false,
+      "durationMs": 26400,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 291045,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0109",
+        "agent_id": "agent-z29-1",
+        "intent": {
+          "performance": {
+            "axis": "throughput"
+          }
+        },
+        "touched_nodes": [
+          "TaskFilter",
+          "listTasks",
+          "exportToInflux",
+          "buildAggregation"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 29,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Optimize TaskFilter, listTasks (+2 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:29",
+          "intent:performance",
+          "axis:throughput"
+        ]
+      },
+      "agentId": "agent-z29-1",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 18400,
+      "tokenUsage": null,
+      "skippedBlastRadius": 4
+    },
+    {
+      "task": {
+        "id": "T0115",
+        "agent_id": "agent-z30-4",
+        "intent": {
+          "test_add": {
+            "covers": [
+              "taskStore.count",
+              "UserFilter",
+              "cancelReport"
+            ]
+          }
+        },
+        "touched_nodes": [
+          "taskStore.count",
+          "UserFilter",
+          "cancelReport"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 30,
+        "expected_conflict_class": "A",
+        "service": "task-service",
+        "description": "Add tests covering taskStore.count, UserFilter (+1 more) in task-service",
+        "tags": [
+          "class:A",
+          "zone:30",
+          "intent:test_add"
+        ]
+      },
+      "agentId": "agent-z30-4",
+      "skipped": false,
+      "conflictClass": "B",
+      "episodeId": "01KRCNZY...",
+      "intentMismatch": false,
+      "durationMs": 27800,
+      "tokenUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheCreationTokens": 0,
+        "totalTokens": 291972,
+        "costUsd": null
+      },
+      "skippedBlastRadius": 0
+    },
+    {
+      "task": {
+        "id": "T0114",
+        "agent_id": "agent-z30-3",
+        "intent": {
+          "security_fix": {
+            "severity": "low",
+            "cve": null
+          }
+        },
+        "touched_nodes": [
+          "taskStore.count",
+          "UserFilter",
+          "cancelReport"
+        ],
+        "files_touched": [
+          "services/task-service/src/db/taskStore.ts"
+        ],
+        "overlap_zone": 30,
+        "expected_conflict_class": "B",
+        "service": "task-service",
+        "description": "Patch security issue in taskStore.count, UserFilter (+1 more) in task-service",
+        "tags": [
+          "class:B",
+          "zone:30",
+          "intent:security_fix",
+          "severity:low"
+        ]
+      },
+      "agentId": "agent-z30-3",
+      "skipped": true,
+      "conflictClass": null,
+      "episodeId": null,
+      "intentMismatch": false,
+      "durationMs": 17200,
+      "tokenUsage": null,
+      "skippedBlastRadius": 3
+    }
+  ],
+  "_reconstructed_from_log": "/tmp/memfleet_eval_v2.log",
+  "_reconstruction_note": "Original writeResults call failed with ENOENT (results/v2 dir missing). This JSON is reconstructed from the run log; per-task token counts are the total-tokens reported by claude --output-format=json at the time of the run (input+output+cache_read+cache_create summed). Per-token-channel breakdown is not recoverable from the log."
+}
